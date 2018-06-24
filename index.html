@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<html>
+    
+<head> 
+    <meta charset="utf-8">
+
+    <title>Crystal Collector</title>
+
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js">
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+
+<body>
+    
+    <div class="jumbotron text-center">
+        <h1>Crystals Collector!</h1></div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 instructions">
+                    <h2>Instructions</h2>
+                    <p>You will be given a random number at the start of the game.</p>
+                    <p>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.</p>
+                    <p>You win the game by matching your total score to random mumber, you lose the game if your total score goes above the random mumber.</p>
+                    <p>The value of each crystal is hidden from you until you click on it.</p>
+                    <p>Each time when the game starts, the game will change the values of each crystal.</p>
+                </div>
+            </div>
+        
+        <div class="row">
+            <div class="col-sm-9">
+                <h2>Match this: <div id="matchThis"></div></h2>
+            </div>
+            <div class="col-sm-3">
+                <h3>Wins: <div id="wins"></div></h3>
+                <h3>Losses: <div id="losses"></div></h3>
+            </div>
+        </div>
+    
+        <div class="row">
+            <div class="col-sm-3">
+                <img src="assets/images/blue-heart.jpg" class="img-blue" alt"Blue heart crystal" width"200" height"200"/> 
+            </div>
+            <div class="col-sm-3">
+                <img src="assets/images/clear-heart.jpg" class="img-clear" alt"Clear heart crystal" width"200" height"200"/> 
+            </div>
+            <div class="col-sm-3">
+                <img src="assets/images/green-heart.jpg" class="img-green" alt"Green heart crystal" width"200" height"200"/> 
+            </div>
+            <div class="col-sm-3">
+                <img src="assets/images/red-heart.jpg" class="img-red" alt"Red heart crystal" width"200" height"200"/> 
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">
+                <h2>Your total score is: </h2>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="assets/javascript/game.js"></script>
+
+
+</html>
