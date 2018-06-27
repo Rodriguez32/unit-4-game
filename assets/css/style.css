@@ -8,3 +8,10 @@
 .instructions {
     text-align: center;
 }
+
+
+/* could not get footer to show on my screen */
+.footer {
+    background-image: url("../images/background.jpg");
+    background-size: cover;
+}
