@@ -7,6 +7,7 @@ $(document).ready(function() {
     console.log(Random)
 // Show random number on Match this 
     $("#matchThis").text(Random);
+    reset();
 
 // Assign random number to each crystal between 1-12
     var num1= Math.floor(Math.random()*11+1)
@@ -26,7 +27,7 @@ $("#losses").text(losses);
     function goodplay(){
         alert("You Win!");
         wins++;
-        $("wins").text(wins);
+        $("#wins").text(wins);
         reset()
     }
 
@@ -52,14 +53,57 @@ $("#losses").text(losses);
             }
     })
 
-    
+    $(".clear").on("click", function(){
+        userTotal = userTotal + num2;
+        console.log (userTotal);
+        $("#totalScore").text(userTotal);
+
+            if(userTotal === Random){
+                goodplay();
+            }
+            else if (userTotal > Random) {
+                loser();
+            }
+    })
+
+    $(".green").on("click", function(){
+        userTotal = userTotal + num3;
+        console.log (userTotal);
+        $("#totalScore").text(userTotal);
+
+            if(userTotal === Random){
+                goodplay();
+            }
+            else if (userTotal > Random) {
+                loser();
+            }
+    })
+
+    $(".red").on("click", function(){
+        userTotal = userTotal + num4;
+        $("#totalScore").text(userTotal);
+
+            if(userTotal === Random){
+                goodplay();
+            }
+            else if (userTotal > Random) {
+                loser();
+            }
+    })
     
 // Reset game   
     function reset(){
-
+        Random=Math.floor(Math.random()*101+19);
+        
+        $("#matchThis").text(Random);
+        console.log(matchThis)
+        num1= Math.floor(Math.random()*11+1)
+        num2= Math.floor(Math.random()*11+1)
+        num3= Math.floor(Math.random()*11+1)
+        num4= Math.floor(Math.random()*11+1)
+        userTotal= 0;
+        $("#totalScore").text(userTotal);
     }
-    
-    
     
 });
 
