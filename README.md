@@ -10,3 +10,6 @@ know what it is until you click on it.
 If you match the <strong>Match This</strong> number you win! If you don't you lose! 
 Game will keep track of your wins and losses. And will reset so you can keep playing. </p>
 Enjoy!
+
+<h2>Deployment</h2>
+<p>https://rodriguez32.github.io/unit-4-game/</p>
